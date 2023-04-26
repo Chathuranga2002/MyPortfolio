@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/normalize.css">
+    <title>case03</title>
+
+    <style>
+        * {
+            margin: 0%;
+        }
+        .leyers{
+            height: 100vh;
+            position: relative;
+        }
+        .cercle{
+            width: 250px;
+            height: 250px;
+            border-radius: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        main>section:nth-child(1)>div{
+            background: purple;
+        }
+        main>section:nth-child(2)>div{
+            background: tomato;
+        }
+        main>section:nth-child(3)>div{
+            background: dodgerblue;
+        }
+        main > div:nth-child(4){
+            position: fixed;
+            width: 290px;
+            height: 290px;
+            border-radius: 100%;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            border: 20px solid grey;
+        }
+
+        main > div:nth-child(5){
+            position: fixed;
+            width: 250px;
+            height: 250px;
+            border-radius: 100%;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            border: 20px solid red;
+        }
+        main > section >div> h1 {
+            position: absolute;
+            left: 35%;
+            top: 35%;
+            text-align: center;
+            color: white;
+        }
+
+        main >:nth-child(2) >div> h1 {
+            left: 25%;
+            top: 35%;
+
+        }
+        main >:nth-child(3) >div> h1 {
+            left: 2%;
+            top: 20%;
+
+        }
+
+    </style>
+
+</head>
+<body>
+<main>
+
+    <section class="leyers">
+
+        <!--Hello Circle-->
+        <div class="cercle">
+            <h1>Hello</h1>
+        </div>
+    </section>
+
+    <section class="leyers">
+        <!--Welcome Circle-->
+        <div class="cercle">
+            <h1>Welcome</h1>
+        </div>
+    </section>
+
+    <section class="leyers">
+        <!--IJSE Circle-->
+        <div class="cercle">
+            <h1>Institute of Software Engineering</h1>
+        </div>
+    </section>
+
+
+    <div></div>
+    <div></div>
+
+
+
+</main>
+
+</body>
+</html>
