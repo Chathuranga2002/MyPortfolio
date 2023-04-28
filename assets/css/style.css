@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* Header styles
+============================================ */
+header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #E7F0ED;
+    color: #14192B;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header > a > img {
+    padding-left: 20px;
+}
+
+header > a > img {
+    transition: all 0.2s ease;
+}
+
+header > a > img:hover {
+    transform: scale(1.2);
+}
+
+header > nav {
+    padding-right: 20px;
+}
+
+header menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header menu li {
+    margin-right: 20px;
+}
+
+header menu li a {
+    color: #14192b;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+/* normal state */
+.hoverText {
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+}
+
+/* hover state */
+.hoverText:hover {
+    font-weight: bold;
+    transform: scale(1.2);
+}
+
+/* Underline Text */
+.underline {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.underline::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    background-color: #FECB02;
+    transition: width 0.3s ease-in-out;
+}
+
+.underline:hover::after {
+    width: 100%;
+}
+
+/*.navbar{*/
+/*    position: fixed;*/
+/*    width: 100%;*/
+/*    z-index: 999;*/
+/*    padding: 30px 0;*/
+/*    font-family: 'Ubuntu', sans-serif;*/
+/*    transition: all 0.3s ease;*/
+/*}*/
+/*.navbar menu {*/
+/*    float: right;*/
+/*    color: white;*/
+/*    text-align: center;*/
+/*    padding: 14px 20px;*/
+/*    text-decoration: none;*/
+/*    font-size: 14px;*/
+/*    font-family: 'Ubuntu', sans-serif;*/
+/*    font-style: normal;*/
+/*    display: block;*/
+/*}*/
+.hednav{
+    background:black;
+    position: relative;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+
+ nav > ul {
+    position: absolute;
+    right: 0px;
+    top: 15px;
+}
+
+ nav > ul > li {
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 16px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+nav > ul > li > i {
+    color: #e90807;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+ nav > ul > li > a {
+    text-decoration: none;
+    color: #171515;
+}
