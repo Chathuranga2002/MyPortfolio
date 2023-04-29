@@ -5,36 +5,86 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+     font-family: 'Ubuntu', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Header styles
+============================================ */
+header{
+    position: relative;
+    z-index: 999;
+}
+
+.backgr1{
+    background-color: #1E1E1E;
+    position: relative;
+}
+ /* home */
+main>section#home{
+    height: 100vh;
+}
+
+#imag1{
+    position: absolute;
+    height: 80vh;
+    bottom: 0;
+    right: 0;
+}
+.homeTxt{
+    color: white;
+    position: absolute;
+    left: 10vw;
+    top: 40vh;
+    margin: auto;
+}
+.text-1{
+    font-size: 27px;
+}
+.text-2{
+    
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+
 /* Header styles
 ============================================ */
 header {
-    height: 10vh;
+    position: fixed;
+    width: 100%;
+    height: 8vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px;
-    background-color: #E7F0ED;
+    padding: 40px;
+    background-color: #1E1E1E;
     color: #14192B;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-header > a > img {
-    padding-left: 20px;
-}
-
-header > a > img {
-    transition: all 0.2s ease;
-}
-
-header > a > img:hover {
-    transform: scale(1.2);
 }
 
 header > nav {
-    padding-right: 20px;
+    padding-right: 10px;
 }
 
 header menu {
@@ -45,11 +95,12 @@ header menu {
 }
 
 header menu li {
-    margin-right: 20px;
+    font-size: 20px;
+    margin-left: 40px;
 }
 
 header menu li a {
-    color: #14192b;
+    color: white;
     text-decoration: none;
     transition: all 0.2s ease;
 }
@@ -67,13 +118,13 @@ header menu li a {
 }
 
 /* Underline Text */
-.underline {
+.menu-btn {
     position: relative;
     display: inline-block;
     padding-bottom: 5px;
 }
 
-.underline::after {
+.menu-btn::after {
     content: "";
     display: block;
     position: absolute;
@@ -85,60 +136,50 @@ header menu li a {
     transition: width 0.3s ease-in-out;
 }
 
-.underline:hover::after {
+.menu-btn:hover::after {
     width: 100%;
 }
-
-/*.navbar{*/
-/*    position: fixed;*/
-/*    width: 100%;*/
-/*    z-index: 999;*/
-/*    padding: 30px 0;*/
-/*    font-family: 'Ubuntu', sans-serif;*/
-/*    transition: all 0.3s ease;*/
-/*}*/
-/*.navbar menu {*/
-/*    float: right;*/
-/*    color: white;*/
-/*    text-align: center;*/
-/*    padding: 14px 20px;*/
-/*    text-decoration: none;*/
-/*    font-size: 14px;*/
-/*    font-family: 'Ubuntu', sans-serif;*/
-/*    font-style: normal;*/
-/*    display: block;*/
-/*}*/
-.hednav{
-    background:black;
-    position: relative;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1;
-}
-
-
- nav > ul {
-    position: absolute;
-    right: 0px;
-    top: 15px;
-}
-
- nav > ul > li {
-    font-size: 20px;
-    margin-left: 2px;
-    margin-right: 16px;
-    display: inline-block;
+.logo{
+    padding: 20px;
+    color: #f1f1f1;
+    font-size: 30px;
     font-weight: bold;
 }
-
-nav > ul > li > i {
-    color: #e90807;
-    font-size: 20px;
-    margin-right: 5px;
+header span{
+    color: #FECB02;
+    ;
+}
+/* commen
+============================================ */
+.backgr2{
+    background-color: #FFFFFF;
+    position: relative;
+    height: 100vh;
+}
+.topic {
+    
+    font-size: 10px;
+    
 }
 
- nav > ul > li > a {
-    text-decoration: none;
-    color: #171515;
+/* about me
+============================================ */
+#about{
+    position: relative;
+}
+
+ #aboutPhoto{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 50vh;
+}
+.sect{
+    position: absolute;
+    top: 20vh;
+    left: 0;
+    right: 0;
+    margin: auto; 
+    height: 50vh; 
 }
