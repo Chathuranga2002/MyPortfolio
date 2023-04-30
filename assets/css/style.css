@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
     box-sizing: border-box;
     text-decoration: none;
      font-family: 'Ubuntu', sans-serif;
@@ -176,7 +177,7 @@ header span{
     height: 20vh;
     margin: auto;
     position: absolute;
-    top: 12vh;
+    top: 13vh;
     right: 0;
     left: 0;
 }
@@ -228,6 +229,46 @@ section#education>div>h2{
     right: inherit;
     
   }
+  /* lanaugs
+============================================ */
+.aduTopic h2{
+    font-size: 40px;
+    -webkit-text-stroke: 2px #D6D6D6; 
+}
+.Languages{
+    height: 100vh;
+    color: white;
+    background-color: #1E1E1E;
+    position: relative;
+}
+
+.Languages ul li img{
+     
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    
+}  
+.Languages ul {
+    top: 30vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #44444C;
+    width: 75vw;
+    height: 50vh;
+    position: absolute; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 30px;       
+}
+.Languages ul li figure figcaption{
+    margin-top: 10px;
+    text-align: center;
+    
+}
+
 
 /* contact
 ============================================ */
