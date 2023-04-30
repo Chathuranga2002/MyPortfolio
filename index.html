@@ -14,6 +14,7 @@
     <link rel="icon" href="icon.png">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/fontawsome/css/all.min.css">
 
 
 
@@ -64,15 +65,15 @@
 
     <!--    about section-->
     <section id="about" class="backgr2">
-    
-         <img id="aboutPhoto" src="/assets/images/img.png" alt="Home image">
-           
-        <section>
-            <div id="aboutTopic" class="sect" >
-                <h2 class="topic">About me</h2>
-                <h3>who am i</h3>
+            <img id="aboutPhoto" src="/assets/images/img.png" alt="Home image">
+            <div id="topic">
+                <h2 >About me</h2>
+                <h3 >who am i</h3>
             </div>
-            <article>    
+
+          <section>
+        
+            <article class="articalAbout" id="articl1">    
                 I'm a 20-year-old full-stack developer from Mirissa, Srilanka.
                 I'm familiar with a wide range of programming utilities and languages.
                 Knowledgeable of backend and frontend development requirements.
@@ -86,10 +87,32 @@
     </section>
 
     <!-- education section-->
-    <section id="education">
-
-        <aside>
+    <section id="education"> 
+         <div class="aduTopic">
+            <h2>My Education</h2>
+        </div>   
+        <section class="school">
+            <img class="edImg" src="assets/images/shool.png" alt="school image">
+            <article id="schArti" class="edArti">
+                <h4>school</h4>
+                Mr/shariputhra secondary school <br>
+                G.C.E O/L exam and <br>
+                G.C.E ADVANCE LEVEL exam
+            </article>
+        </section>
+        <section class="ijse">
+            <article id="ijseArti" class="edArti">
+                <h4>high education</h4>
+                Institute of Software Engineering(IJSE) <br>
+                Graduate Diploma in Software Engineering ( GDSE )
+            </article>
+            <img class="edImg" src="assets/images/ijse-logo.jpg" alt="ijse logo">
+      
+        </section>
+        
+        <!-- <aside>
             <img src="assets/images/shool.png" alt="school image">
+            
         </aside>
         <section>
             <h2>My Education</h2>
@@ -107,7 +130,7 @@
         </section>
         <aside>
             <img src="assets/images/ijse-logo.jpg" alt="ijse logo">
-        </aside>
+        </aside> -->
     </section>
 
     <!--    Certificate section-->
@@ -280,26 +303,43 @@
 
     <!--    contact section-->
     <section id="contact">
-        <h2>Contact me</h2>
-        <section>
-            <img src="assets/images/icon/icons8-whatsapp-100.png" alt="icon jpg">
-            <img src="assets/images/icon/icons8-gmail-logo-100.png" alt="icon jpg">
-            <img src="assets/images/icon/icons8-github-100%20(1).png" alt="icon jpg">
-            <img src="assets/images/icon/icons8-linkedin-100.png" alt="icon jpg">
-            <img src="assets/images/icon/icons8-location-100.png" alt="icon jpg">
-            <div>+94 71 1650370</div>
-            <div>thisarachathuranga01@gmail.com</div>
-            <div>Chathuranga2002</div>
-            <div>thisara chathuranga</div>
-            <div>Nindankoratuwa,<br>
-                yatipila,<br>
-                mirissa.</div>
+ 
+         <section id="contactlogo">
+<!--             <img src="assets/images/icon/icons8-whatsapp-100.png" alt="icon jpg">-->
+<!--            <img src="assets/images/icon/icons8-gmail-logo-100.png" alt="icon jpg">-->
+<!--            <img src="assets/images/icon/icons8-github-100%20(1).png" alt="icon jpg">-->
+<!--            <img src="assets/images/icon/icons8-linkedin-100.png" alt="icon jpg">-->
+<!--            <img src="assets/images/icon/icons8-location-100.png" alt="icon jpg">-->
+            <div>
+                <img src="assets/images/icon/icons8-whatsapp-100.png" alt="icon jpg">
+                 <p id="telno"> +94&nbsp;711650370</p>
+                </div>
+            <div> 
+                <img src="assets/images/icon/icons8-gmail-logo-100.png" alt="icon jpg">
+                <p id="gamil"> thisarachathuranga01@gmail.com</p>
+            </div>
+            <div>
+                 <img src="assets/images/icon/icons8-github-100%20(1).png" alt="icon jpg"> 
+                 <p id="git"> Chathuranga2002</p>
+                </div>
+            <div>
+                 <img src="assets/images/icon/icons8-linkedin-100.png" alt="icon jpg"> 
+                <p id="linkin"> thisara&nbsp;chathuranga</p>
+            </div>
+            <div>
+                <img src="assets/images/icon/icons8-location-100.png" alt="icon jpg">
+                <P id="address">  Nindankoratuwa,<br>
+                     yatipila,<br>
+                     mirissa.
+                </P>
+            </div>
 
-        </section>
-        <section>
-            <form>
+         </section>
+         <section id="chatbox">
+            <form id="form">
                 <fieldset>
-                    <input name="Name" id="name" type="text" placeholder="Name">
+                    <p id="chattitele">Message to me</p>
+                    <input  name="Name" id="name" type="text" placeholder="Name">
                     <input name="email" id="email" type="email" placeholder="Email"><br>
                     <input name="subject" id="subject" type="email" placeholder="Subject"><br>
                     <textarea name="message" id="message" rows="5" placeholder="Message"></textarea><br>
@@ -313,7 +353,7 @@
 
 </main>
 <footer>
-    <h4>© Copyright 2023 Thisara chathuranga. All Rights Reserved.  </h4>
+    <p>© Copyright 2023 Thisara chathuranga. All Rights Reserved.  </p>
 </footer>
 </body>
 </html>
