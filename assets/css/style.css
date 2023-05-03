@@ -69,6 +69,9 @@ main>section#home{
     font-size: 40px;
     margin: 5px 0;
 }
+.text-3 span{
+    color: #FECB02; 
+}
 
 /* Header styles
 ============================================ */

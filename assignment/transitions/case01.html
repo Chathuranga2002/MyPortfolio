@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <title>assigment</title>
+    <link rel="stylesheet" href="fontawsome/css/all.min.css">
+
+    <style>
+        section{
+            height: 100vh;
+        }
+        section div{
+            height: 90vh;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            flex-wrap: nowrap;
+        }
+        section>div>div{
+            box-shadow: 1px 2px 4px 0px #1E1E1E;
+            height: 50px;
+            width: 250px;
+            border-radius: 4px;
+            background-color: plum;
+            position: relative;
+            left: -200px;
+            transition: 3s;
+            align-items: center;
+            margin-right: 20px;
+
+        }
+        section>div>div:hover{
+            transition: 3s;
+            left: -10px;
+        }
+        section>div>div>p>i{
+            margin-left: 100px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+<section>
+    <div>
+        <div>
+            <p>Menu One <i class="fa-solid fa-calendar-days" style="color: #ffffff;"></i>  </p>
+        </div>
+        <div>
+            <p>Menu Two <i class="fa-solid fa-truck-fast" style="color: #ffffff;"></i></p>
+        </div>
+        <div>
+            <p>Menu Tree <i class="fa-solid fa-print" style="color: #ffffff;"></i></p>
+        </div>
+        <div>
+            <p>Menu Four <i class="fa-solid fa-gift" style="color: #ffffff;"></i></p>
+        </div>
+        <div>
+            <p>Menu Five  <i class="fa-brands fa-windows" style="color: #ffffff;"></i></p>
+        </div>
+    </div>
+</section>
+</body>
+</html>
