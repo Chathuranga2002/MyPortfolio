@@ -330,7 +330,7 @@ section#education>div>h2{
   /* setificate */
 
 
-  
+
   /* lanaugs
 ============================================ */
 .aduTopic h2{
@@ -452,7 +452,7 @@ section#education>div>h2{
     height: 50vh;
     width: 80vw;
 
-    position: relative;
+    /* position: relative; */
     align-items: center;
     justify-content: space-around;
     display: flex;
@@ -488,17 +488,17 @@ section#education>div>h2{
 
 }
 #meatShop{
-    background-image: url("/assets/images/shop.png");
+    background-image: url("../images/shop.png");
     background-size:  cover;
     background-position: bottom;
 }
 #blue{
-    background-image: url("/assets/images/blueoscen.png");
+    background-image: url("../images/blueoscen.png");
     background-size:  cover;
     background-position: bottom;
 }
 #game{
-    background-image: url("/assets/images/game.png");
+    background-image: url("../images/game.png");
     background-size:  cover;
     background-position: bottom;
 }
@@ -647,14 +647,14 @@ form#form {
 .gallery div:nth-child(1){
     grid-column: 2/5;
     grid-row: 1/10;
-    background-image: url("/assets/images/gallery/photo_2023-02-23_20-32-02.jpg");
+    background-image: url("../images/gallery/photo_2023-02-23_20-32-02.jpg");
     background-size: cover;
     background-position: center;
 }
 .gallery div:nth-child(2){
     grid-column: 5/15;
     grid-row: 1/10;
-    background-image: url("/assets/images/gallery/img2.jpg");
+    background-image: url("../images/gallery/img2.jpg");
     background-size: cover;
     background-position: bottom;
   
@@ -662,28 +662,28 @@ form#form {
 .gallery div:nth-child(3){
     grid-column: 15/21;
     grid-row: 2/6;
-    background-image: url("/assets/images/gallery/DSC.jpg");
+    background-image: url("../images/gallery/DSC.jpg");
     background-size: cover;
     background-position: center;
 }
 .gallery div:nth-child(4){
     grid-column: 1/8;
     grid-row: 10/17;
-    background-image: url("/assets/images/gallery/DSC_4144.jpg");
+    background-image: url("../images/gallery/DSC_4144.jpg");
     background-size: cover;
     background-position: bottom;
 }
 .gallery div:nth-child(5){
     grid-column: 8/15;
     grid-row: 10/16;
-    background-image: url("/assets/images/gallery/DSC_4220.jpg");
+    background-image: url("../images/gallery/DSC_4220.jpg");
     background-size: cover;
     background-position: center;
 }
 .gallery div:nth-child(6){
     grid-column: 15/20;
     grid-row: 6/17;
-    background-image: url("/assets/images/gallery/DSC_3759.jpg");
+    background-image: url("../images/gallery/DSC_3759.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -692,7 +692,7 @@ form#form {
     border-radius: 6px;
 }
 .gallery div:hover{
-    transform: scale(1.08);
+    ++e(1.08);
 }
 
 
