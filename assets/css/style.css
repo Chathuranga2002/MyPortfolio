@@ -692,7 +692,8 @@ form#form {
     border-radius: 6px;
 }
 .gallery div:hover{
-    ++e(1.08);
+    transform: scale(1.08);
+    /*++e(1.08);*/
 }
 
 
