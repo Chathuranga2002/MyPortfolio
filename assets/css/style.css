@@ -30,7 +30,7 @@ html{
 /* Header styles
 ============================================ */
 header{
-    position: relative;
+
     z-index: 999;
 }
 
@@ -56,6 +56,28 @@ main>section#home{
     top: 40vh;
     margin: auto;
 }
+
+.homeTxt a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 25px 10px 25px;
+    background-color: #FECB02;
+    font-size: 18px;
+    color: #fff;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.homeTxt a:hover {
+    background-color: #45a049; /* Change this to your desired hover background color */
+}
+
+
+
+
+
 .text-1{
     font-size: 27px;
 }
@@ -119,6 +141,7 @@ header menu li a {
 .hoverText:hover {
     font-weight: bold;
     transform: scale(1.2);
+    color: #FECB02;
 }
 
 /* Underline Text */
@@ -359,7 +382,7 @@ section#education>div>h2{
     margin: auto;
     background-color: #44444C;
     width: 75vw;
-    height: 55vh;
+    height: 45vh;
     position: absolute; 
     display: flex;
     align-items: center;
