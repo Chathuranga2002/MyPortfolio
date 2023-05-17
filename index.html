@@ -10,21 +10,26 @@
     <meta name="owner" content="thisara chathuranga">
     <meta name="robots" content="index">
     <meta name="theme-color" content="#353b48">
-    <meta name="viewport" content="width=divice-width initial-scale=1 user-scalable=no">
+    <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
     <link rel="icon" href="icon.png">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="/assets/css/fontawsome/css/all.min.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/fontawsome/css/all.min.css">
 
 
 </head>
 <body>
 <header >
         <!--    navigation section-->
+    <div>
+        <i class="fa-regular fa-bars"></i>
+    </div>
     <div class="logo">Portfo<span>lio.</span></div>
     <nav class="navbar">
+
         <div class="max-width"></div>
+            <div> <i class="fa-duotone fa-xmark"></i></div>
             <menu class="menu">
                 <li><a href="#home" class="menu-btn hoverText">Home</a></li>
                 <li><a href="#about" class="menu-btn hoverText">About</a></li>
@@ -91,7 +96,7 @@
             <h2>My Education</h2>
         </div>   
         <section class="school">
-            <img class="edImg" src="assets/images/shool.png" alt="school image">
+            <img id="shl" class="edImg" src="assets/images/shool.png" alt="school image">
             <article id="schArti" class="edArti">
                 <h4>school</h4>
                 Mr/shariputhra secondary school <br>
@@ -105,7 +110,7 @@
                 Institute of Software Engineering(IJSE) <br>
                 Graduate Diploma in Software Engineering ( GDSE )
             </article>
-            <img class="edImg" src="assets/images/ijse-logo.jpg" alt="ijse logo">
+            <img id="ijse" class="edImg" src="assets/images/ijse-logo.jpg" alt="ijse logo">
       
         </section>
         
@@ -335,28 +340,23 @@
     <section id="contact">
  
          <section id="contactlogo">
-<!--             <img src="assets/images/icon/icons8-whatsapp-100.png" alt="icon jpg">-->
-<!--            <img src="assets/images/icon/icons8-gmail-logo-100.png" alt="icon jpg">-->
-<!--            <img src="assets/images/icon/icons8-github-100%20(1).png" alt="icon jpg">-->
-<!--            <img src="assets/images/icon/icons8-linkedin-100.png" alt="icon jpg">-->
-<!--            <img src="assets/images/icon/icons8-location-100.png" alt="icon jpg">-->
-            <div>
+            <div class="flogo">
                 <img src="assets/images/icon/icons8-whatsapp-100.png" alt="icon jpg">
                  <p id="telno"> +94&nbsp;711650370</p>
                 </div>
-            <div> 
+            <div class="flogo">
                 <img src="assets/images/icon/icons8-gmail-logo-100.png" alt="icon jpg">
                 <p id="gamil"> thisarachathuranga01@gmail.com</p>
             </div>
-            <div>
+            <div class="flogo">
                  <img src="assets/images/icon/icons8-github-100%20(1).png" alt="icon jpg"> 
                  <p id="git"> Chathuranga2002</p>
                 </div>
-            <div>
+            <div class="slogo">
                  <img src="assets/images/icon/icons8-linkedin-100.png" alt="icon jpg"> 
                 <p id="linkin"> thisara&nbsp;chathuranga</p>
             </div>
-            <div>
+            <div class="slogo">
                 <img src="assets/images/icon/icons8-location-100.png" alt="icon jpg">
                 <P id="address">  Nindankoratuwa,<br>
                      yatipila,<br>

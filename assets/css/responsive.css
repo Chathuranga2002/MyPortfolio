@@ -21,7 +21,7 @@
         height: 100vh;
         width: 100vw;
         position: absolute;
-        left: 0;
+        left: -100vw;
         top: 0;
         background-color: #2e2b34;
         padding: 0;
@@ -41,13 +41,251 @@
         font-size: 20px;
         margin: 0;
     }
+    header div:nth-child(1){
+        position: absolute;
+        width: 30px;
+        color: white;
+        z-index: 999;
+    }
+}
+@media all and (min-width: 375px)and (max-width: 424px) {
+
+}
+@media all and (min-width: 425px)and (max-width: 767px) {
+    .logo {
+        padding: 0px;
+        color: #f1f1f1;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    header menu {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        width: 100vw;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navbar{
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        left: -100vw;
+        top: 0;
+        background-color: #2e2b34;
+        padding: 0;
+    }
+    header {
+        padding: 10px 30px;
+        position: fixed;
+        width: 100%;
+        height: 10vh;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #1E1E1E;
+        color: #14192B;
+    }
+    header menu li {
+        font-size: 20px;
+        margin: 0;
+    }
+    /*header div:nth-child(1){*/
+    /*    position: absolute;*/
+    /*    width: 30px;*/
+    /*    color: white;*/
+    /*    z-index: 999;*/
+    /*}*/
+    .homeTxt {
+        top: 49vh;
+    }
+    #imag1{
+        height: 74vh;
+    }
+    .text-1 {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+    .text-2 {
+        font-size: 40px;
+        padding-bottom: 0px;
+    }
+    .text-3 {
+        font-size: 20px;
+        padding-bottom: 0px;
+    }
+    .homeTxt a {
+        padding: 5px 15px 5px 15px;
+        font-size: 16px;
+    }
+    #topic h2 {
+        font-size: 35px;
+    }
+    #topic h3 {
+        font-size: 20px;
+    }
+    #aboutPhoto {
+        height: 50vh;
+        left: 0;
+        top: -75px;
+        bottom: 0;
+        right: 0;
+    }
+    .content {
+        display: flex;
+        /* align-items: center; */
+        left: 0;
+        width: 75vw;
+        right: 0;
+        top: 82vh;
+        text-align: center;
+        flex-direction: column;
+    }
+    .content article {
+        font-size: 14px;
+        margin-bottom: 35px;
+    }
+    #about{
+       height: 120vh;
+    }
+    section#education>div>h2 {
+        font-size: 35px;
+        -webkit-text-stroke: 2px #D6D6D6;
+    }
+/* aducation */
+    .edImg {
+        width: 28vw;
+    }
+    .school{
+        width: 80vw;
+        right: 0;
+        /* position: absolute; */
+        margin: auto;
+        left: 0;
+        top: 27vh;
+
+    }
+    .edArti{
+        font-size: 12px;
+    }
+    .edArti h4{
+        font-size: 18px;
+    }
+    #schArti{
+        top: 0px;
+        left: 30vw;
+    }
+    .ijse{
+        width: 80vw;
+        display: flex;
+        right: 0;
+        margin: auto;
+        left: 0;
+        top: 60vh;
+        flex-direction: row-reverse;
+    }
+    #ijseArti{
+        width: 54vw;
+        right: 125px;
+        top: -9px;
+    }
+/*    contact */
+    main>section#contact>section#contactlogo>div>img {
+        height: 25px;
+    }
+    main>section#contact>section#contactlogo>div>p {
+        font-size: 14px;
+    }
+    form#form {
+        font-size: 12px;
+        width: 80vw;
+        margin: 0 auto;
+        color: #fff;
+        padding: 0;
+        position: relative;
+    }
+    #chatbox {
+        margin: auto;
+        width: 80vw;
+        top: 15vh;
+        right: 0;
+        left: 0;
+        position: absolute;
+    }
+    input#name{
+        width: 40%;
+        position: absolute;
+    }
+    input#email{
+        width: 50%;
+        left: 50%;
+        position: relative;
+    }
+    input,
+    textarea {
+        display: flex;
+        width: 100%;
+        padding: 6px;
+        border: none;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        background-color: white;
+        color: #44444C;
+    }
+    fieldset {
+        width: 80vw;
+    }
+    #contactlogo {
+        top: 70vh;
+        left: 0px;
+        width: 65vw;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        right: 0;
+    }
+    #contactlogo  div p{
+        left: 11vw;
+        position: absolute;
+    }
+
+    #chattitele {
+        text-align: center;
+        font-size: 23px;
+        padding-bottom: 25px;
+    }
+    button {
+        padding: 6px 20px;
+    }
+    #contact{
+        height: 125vh;
+    }
+
+
+/*    footer*/
+    footer p {
+        text-align-last: center;
+        margin: auto;
+        font-size: 13px;
+        /* display: flex; */
+        align-content: flex-end;
+        justify-content: center;
+    }
+    footer {
+        height: 10vh;
+    }
+
 }
 
 @media all and (min-width: 768px)and (max-width: 1024px) {
     /*home and nav*/
     header {
         padding: 30px;
-
     }
     .logo {
         padding: 18px;

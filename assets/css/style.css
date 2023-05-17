@@ -31,7 +31,7 @@ html{
 ============================================ */
 header{
 
-    z-index: 999;
+    z-index: 900;
 }
 
 .backgr1{
@@ -179,6 +179,9 @@ header span{
 }
 /* commen
 ============================================ */
+header div:nth-child(1){
+    position: absolute;
+}
 
 
 
