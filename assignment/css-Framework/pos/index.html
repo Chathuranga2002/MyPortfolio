@@ -8,39 +8,116 @@
 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown link
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-            </ul>
+<header>
+
+
+
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Pos System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Customer</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Item</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Orders</a>
+                    </li>
+
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container text-center">
+    <div class="row">
+        <div class="col">
+            <h2 class="text-primary pt-5 m-lg-2">Manage Customers</h2>
         </div>
     </div>
-</nav>
+    <div class="row">
+        <div class="col" >
 
+            <section class="col border-light-subtle m-3 border rounded object-fit-contain" >
+                <h5 class="text-dark text-center m-lg-3 pt-5" >Add Customer</h5>
+                <form>
+                    <div class="form-floating mb-3 mt-2">
+                        <input type="text" class="form-control" id="cid" placeholder="Id">
+                        <label for="cid">Id</label>
+                    </div>
 
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="Name" placeholder="Name">
+                        <label for="Name">Name</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="Address" placeholder="Address">
+                        <label for="Address">Address</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="contact" placeholder="Contact">
+                        <label for="contact">Contact</label>
+                    </div>
+                </form>
+
+                <div class="col-6 ms-5">
+                    <button type="button" class="btn  btn-info me-1 mt-2 mb-3">Add</button>
+                    <button type="button" class="btn btn-warning me-1 mt-2 mb-3 ms-4">Update</button>
+                </div>
+
+            </section>
+        </div>
+        <div class="col">
+            <section class="col border-light-subtle m-3 border rounded object-fit-contain" >
+                <h5 class="text-dark text-center m-lg-3 pb-3" >Customer Details</h5>
+                <table class="table table-light table-striped">
+                    <thead>
+                    <tr>
+                        <th style="background-color: #618bb1" scope="col">Id</th>
+                        <th style="background-color: #618bb1" scope="col">Name</th>
+                        <th style="background-color: #618bb1" scope="col">Address</th>
+                        <th style="background-color: #618bb1" scope="col">Contact</th>
+                        <th style="background-color: #618bb1" scope="col">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    <tr>
+                        <th scope="row">C1</th>
+                        <td>thisara</td>
+                        <td>mirissa</td>
+                        <td>07111111111</td>
+                        <td>
+                            <button type="button" class="btn btn-warning">Edit</button>
+                            <button type="button" class="btn btn-danger">Delete</button>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+</div>
 <script src="../js/bootstrap.bundle.js"></script>
 </body>
 </html>
