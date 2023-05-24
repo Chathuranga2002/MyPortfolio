@@ -5,6 +5,18 @@
         font-size: 18px;
         font-weight: bold;
     }
+    #ham{
+        font-size: 20px;
+        position: absolute;
+        left: 230px;
+    }
+
+    #cros{
+        font-size: 20px;
+        right: 15px;
+        position: absolute;
+        top: 25px;
+    }
     header menu {
         display: flex;
         list-style: none;
@@ -27,6 +39,7 @@
         padding: 0;
     }
     header {
+        padding: 30px;
         position: fixed;
         width: 100%;
         height: 10vh;
@@ -48,7 +61,43 @@
         z-index: 999;
     }
     #imag1 {
-        display: none;
+        height: 50vh;
+    }
+    .text-1 {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+    .text-2 {
+        font-size: 40px;
+        padding-bottom: 0px;
+    }
+    .text-3 {
+        font-size: 20px;
+        padding-bottom: 0px;
+    }
+    .homeTxt a {
+        padding: 5px 15px 5px 15px;
+        font-size: 16px;
+    }
+    #topic h2 {
+        font-size: 35px;
+    }
+    #topic h3 {
+        font-size: 20px;
+    }
+    .homeTxt {
+        left: 12vw;
+        top: 20vh;
+    }
+    .hoIcon{
+        left: 60px;
+        font-size: 22px;
+        color: white;
+        position: absolute;
+        top: 350px;
+    }
+    .hoI{
+        margin-bottom: 20px ;
     }
 }
 @media all and (min-width: 375px)and (max-width: 424px) {

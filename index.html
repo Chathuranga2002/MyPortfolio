@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/fontawsome/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style2.css">
+
 
 
 </head>
@@ -24,13 +24,16 @@
 <header >
         <!--    navigation section-->
     <div>
-        <i class="fa-regular fa-bars"></i>
+        <i id="ham" class="fa fa-bars fa-lg" aria-hidden="true"></i>
     </div>
     <div class="logo">Portfo<span>lio.</span></div>
     <nav class="navbar">
+        <div id="cros">
+            <i  class="fa-solid fa-xmark" style="color: white"></i>
+        </div>
+
 
         <div class="max-width"></div>
-            <div> <i class="fa-duotone fa-xmark"></i></div>
             <menu class="menu">
                 <li><a href="#home" class="menu-btn hoverText">Home</a></li>
                 <li><a href="#about" class="menu-btn hoverText">About</a></li>
@@ -62,6 +65,17 @@
                 <div class="text-2">Thisara Chathuranga</div>
                 <div class="text-3">I’m a <span> software developer</span></div>
                 <a href="https://www.linkedin.com/in/thisara-chathuranga-643785264/" target="_blank">Hire me</a>
+            </div>
+            <div class="hoIcon">
+                <div class="hoI">
+                    <i class="fa-brands fa-github"></i>
+                </div >
+                <div class="hoI">
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <div class="hoI">
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
             </div>
         </section>
     </section>
@@ -122,9 +136,11 @@
         <div class="proTopic">
              <h2>Certificate</h2>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="grid">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <!-- <img src="assets/images/certificate1.png" alt="Certificate">
         <img src="assets/images/certificate2.png" alt="Certificate">
         <img src="assets/images/certificate3.png" alt="Certificate"> -->
@@ -277,7 +293,8 @@
                 <figcaption>small game create by java.</figcaption> 
             </figure>
         </section>
-    </section>
+        </section>
+        <div class="moreButton"><a href="project.html">See More...</a></div>
         
     </section>
     <!--    assignment section-->
@@ -304,6 +321,7 @@
             </figure>
             
         </section>
+        <div id="ass" class="moreButton"><a href="assigment.html">See More...</a></div>
             <!-- <figure>
                 <img src="assets/images/shop.png" alt="pos system image">
                 <figcaption>Assigment 1 </figcaption>
@@ -325,37 +343,29 @@
         <h2>gallery</h2>
         </div>
         <section class="galla">
-        <ul class="honeycomb">
-            <li class="honeycomb-cell">
-                <img class="honeycomb-cell_image" src="img/work-1.jpg">
-                <div class="honeycomb-cell_title">Web Design</div>
+        <ul class="gallery">
+            <li class="cell">
+
             </li>
-            <li class="honeycomb-cell">
-                <img class="honeycomb-cell_image" src="img/work-2.jpg">
-                <div class="honeycomb-cell_title">Graphic Design</div>
+            <li class="cell">
+
             </li>
-            <li class="honeycomb-cell">
-                <img class="honeycomb-cell_image" src="img/Work3.jpg">
-                <div class="honeycomb-cell_title">Illustration</div>
+            <li class="cell">
+
             </li>
-            <li class="honeycomb-cell">
-                <img class="honeycomb-cell_image" src="img/work4.jpg">
-                <div class="honeycomb-cell_title">Motion Graphics </div>
+            <li class="cell">
+
             </li>
-            <li class="honeycomb-cell">
-                <img class="honeycomb-cell_image" src="img/work5.jpg">
-                <div class="honeycomb-cell_title">3D<small>Animation</small></div>
+            <li class="cell">
+
             </li>
-            <li class="honeycomb-cell">
-                <img class="honeycomb-cell_image" src="img/work06.jpg">
-                <div class="honeycomb-cell_title">Cinematic<small>4D</small></div>
+            <li class="cell">
+
             </li>
-            <li class="honeycomb-cell">
-                <img class="honeycomb-cell_image" src="img/work07.jpg">
-                <div class="honeycomb-cell_title">Share Design</div>
-            </li>
-            </section>
+
+
         </ul>
+        </section>
         <!-- <img src="assets/images/IMG-20220623-WA0002.jpg" alt="gallery">
         <img src="assets/images/photo_2023-02-23_20-54-19.jpg" alt="gallery">
         <img src="assets/images/photo_2023-02-23_20-32-02.jpg" alt="gallery"> -->
