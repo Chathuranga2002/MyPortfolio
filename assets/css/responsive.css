@@ -1,4 +1,5 @@
 @media all and (max-width: 320px) {
+    /*home*/
     .logo {
         padding: 0px;
         color: #f1f1f1;
@@ -6,12 +7,14 @@
         font-weight: bold;
     }
     #ham{
+        display: block;
         font-size: 20px;
         position: absolute;
         left: 230px;
     }
 
     #cros{
+        display: block;
         font-size: 20px;
         right: 15px;
         position: absolute;
@@ -79,12 +82,8 @@
         padding: 5px 15px 5px 15px;
         font-size: 16px;
     }
-    #topic h2 {
-        font-size: 35px;
-    }
-    #topic h3 {
-        font-size: 20px;
-    }
+
+
     .homeTxt {
         left: 12vw;
         top: 20vh;
@@ -96,19 +95,336 @@
         position: absolute;
         top: 350px;
     }
+
     .hoI{
         margin-bottom: 20px ;
     }
-}
-@media all and (min-width: 375px)and (max-width: 424px) {
+/*    about*/
+    #topic{
+        top: 40px;
+    }
+    #topic h2 {
+        font-size: 30px;
+    }
+    #topic h3 {
+        font-size: 18px;
+    }
+    #aboutPhoto {
+        height: 220px;
+        left: 0;
+        top: -220px;
+        right: 0;
+    }
+    .content {
+        display: flex;
+        /* align-items: center; */
+        left: 0;
+        width: 75vw;
+        right: 0;
+        top: 375px;
+        text-align: center;
+        flex-direction: column;
+    }
+    .content h2 {
+        margin-bottom: 25px;
+        font-size: 17px;
+    }
+    .content h2  span{
+        font-size: 17px;
+    }
+    .content article {
+        font-size: 14px;
+        margin-bottom: -12px;
+    }
+    .content ul li a {
+        position: absolute;
+        border-radius: 15px;
+        font-size: 10px;
+        margin-top: 10px;
+        margin-right:0;
+    }
+    .content ul li {
+        margin-top: 30px;
+        margin-right: 130px;
+    }
+    #about{
+        height: 120vh;
+    }
+    /* aducation */
+    .aduTopic {
+        top: 60px;
+    }
+    section#education>div>h2 {
+        font-size: 30px;
+        -webkit-text-stroke: 1px #D6D6D6;
+    }
+    #education {
+        height: 75vh;
+
+    }
+
+    .edImg {
+        display: none;
+        width: 28vw;
+    }
+    .school{
+        width: 80vw;
+        right: 0;
+        /* position: absolute; */
+        margin: auto;
+        left: 0;
+        top: 27vh;
+
+    }
+    .edArti{
+        font-size: 12px;
+    }
+    .edArti h4{
+        font-size: 18px;
+    }
+    #schArti{
+        top: -15px;
+        left: 3vw;
+    }
+    .ijse{
+        width: 80vw;
+        display: flex;
+        right: 0;
+        margin: auto;
+        left: 0;
+        top: 60vh;
+        flex-direction: row-reverse;
+    }
+    #ijseArti{
+        width: 78vw;
+        right: 0px;
+        top: -62px;
+    }
+    /*cetificate*/
+    .proTopic h2 {
+        font-size: 30px;
+    }
+    .proTopic {
+        top: 60px;
+        height: 60px;
+    }
+    #certi{
+        top: 20px;
+    }
+    .grid {
+        height: 130px;
+        width: 260px;
+        top: 85px;
+    }
+    #certiBg{
+        height: 275px;
+    }
+    /*languages*/
+    .Languages ul li img {
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        box-shadow: 1px 2px 4px 0px #14192B;
+    }
+    .Languages ul li figure figcaption {
+        display: none;
+    }
+
+    .Languages ul {
+        top: 140px;
+        margin: auto;
+        height: 85px;
+        border-radius: 5px;
+        justify-content: space-evenly;
+    }
+    #lanau{
+        height: 260px;
+    }
+    /*tool*/
+    .aduTopic h2 {
+        font-size: 30px;
+        -webkit-text-stroke: 1px #D6D6D6;
+    }
+    .tools div ul li img {
+        width: 30px;
+        height: 30px;
+    }
+    .tools ul li figure figcaption {
+        display: none;
+    }
+    .toolbac {
+        top: 60px;
+        width: 75vw;
+        height: 170px;
+        border-radius: 5px;
+        justify-content: space-evenly;
+    }
+    .tools {
+        height: 310px;
+    }
+
+    /*project*/
+    #project{
+        height: 740px;
+    }
+    #assignment{
+        height: 740px;
+    }
+    .moreButton {
+
+        bottom: 50px;
+        right: 0;
+        margin: auto;
+        left: 0;
+    }
+    .moreButton a {
+        padding: 5px 8px;
+        border-radius: 15px;
+        font-size: 12px;
+    }
+    #ass a {
+        padding: 5px 8px;
+        border-radius: 15px;
+        font-size: 12px;
+
+    }
+    .proflex {
+        top: 125px;
+        height: 520px;
+        width: 80vw;
+        flex-direction: column;
+    }
+    .proflex figure figcaption {
+        width: 180px;
+        top: 0;
+        bottom: 0;
+    }
+    .proflex figure div {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 190px;
+        height: 140px;
+        border-radius: 7px;
+    }
+    .proflex figure {
+        width: 200px;
+        height: 150px;
+        border-radius: 7px;
+    }
+    /*gallery*/
+    #gtopic {
+        top: 60px;
+    }
+    #gallery{
+        height: 182vh;
+    }
+    .gallery {
+        height: 860px;
+        top: 120px;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+    }
+
+    /*    contact */
+    main>section#contact>section#contactlogo>div>img {
+        margin-top: 2px;
+        height: 20px;
+    }
+
+    form#form {
+        font-size: 12px;
+        width: 80vw;
+        margin: 0 auto;
+        color: #fff;
+        padding: 0;
+        position: relative;
+    }
+    #chatbox {
+        margin: auto;
+        width: 80vw;
+        top: 15vh;
+        right: 0;
+        left: 0;
+        position: absolute;
+    }
+    input#name{
+        width: 40%;
+        position: absolute;
+    }
+    input#email{
+        width: 50%;
+        left: 50%;
+        position: relative;
+    }
+    input,
+    textarea {
+        display: flex;
+        width: 100%;
+        padding: 6px;
+        border: none;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        background-color: white;
+        color: #44444C;
+    }
+    fieldset {
+        width: 80vw;
+    }
+    #contactlogo {
+        top: 70vh;
+        left: 0px;
+        width: 65vw;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        right: 0;
+    }
+    #contactlogo  div p{
+        font-size: 10px;
+        left: 11vw;
+        position: absolute;
+    }
+
+    #chattitele {
+        text-align: center;
+        font-size: 23px;
+        padding-bottom: 25px;
+    }
+    button {
+        padding: 6px 20px;
+    }
+    #contact{
+        height: 125vh;
+    }
+    main>section#contact>section#contactlogo>div>p {
+         font-size: 10px;
+    }
 
 }
-@media all and (min-width: 425px)and (max-width: 767px) {
+@media all and (min-width: 375px)and (max-width: 424px) {
+    /*home*/
     .logo {
         padding: 0px;
         color: #f1f1f1;
         font-size: 18px;
         font-weight: bold;
+    }
+    #ham{
+        display: block;
+        font-size: 20px;
+        position: absolute;
+        left: 290px;
+    }
+
+    #cros{
+        display: block;
+        font-size: 25px;
+        right: 25px;
+        position: absolute;
+        top: 25px;
     }
     header menu {
         display: flex;
@@ -132,7 +448,7 @@
         padding: 0;
     }
     header {
-        padding: 10px 30px;
+        padding: 30px;
         position: fixed;
         width: 100%;
         height: 10vh;
@@ -147,17 +463,14 @@
         font-size: 20px;
         margin: 0;
     }
-    /*header div:nth-child(1){*/
-    /*    position: absolute;*/
-    /*    width: 30px;*/
-    /*    color: white;*/
-    /*    z-index: 999;*/
-    /*}*/
-    .homeTxt {
-        top: 49vh;
+    header div:nth-child(1){
+        position: absolute;
+        width: 30px;
+        color: white;
+        z-index: 999;
     }
-    #imag1{
-        height: 74vh;
+    #imag1 {
+        height: 50vh;
     }
     .text-1 {
         font-size: 18px;
@@ -175,6 +488,432 @@
         padding: 5px 15px 5px 15px;
         font-size: 16px;
     }
+
+
+    .homeTxt {
+        left: 16vw;
+        top: 20vh;
+    }
+    .hoIcon{
+        left: 64px;
+        font-size: 25px;
+        color: white;
+        position: absolute;
+        top: 350px;
+    }
+
+    .hoI{
+        margin-bottom: 20px ;
+    }
+    /*    about*/
+    #topic{
+        top: 40px;
+    }
+    #topic h2 {
+        font-size: 30px;
+    }
+    #topic h3 {
+        font-size: 18px;
+    }
+    #aboutPhoto {
+        height: 220px;
+        left: 0;
+        top: -220px;
+        right: 0;
+    }
+    .content {
+        display: flex;
+        /* align-items: center; */
+        left: 0;
+        width: 65vw;
+        right: 0;
+        top: 375px;
+        text-align: center;
+        flex-direction: column;
+    }
+    .content h2 {
+        margin-bottom: 25px;
+        font-size: 17px;
+    }
+    .content h2  span{
+        font-size: 17px;
+    }
+    .content article {
+        font-size: 14px;
+        margin-bottom: -12px;
+    }
+    .content ul li a {
+        position: absolute;
+        border-radius: 15px;
+        font-size: 10px;
+        margin-top: 10px;
+        margin-right:0;
+    }
+    .content ul li {
+        margin-top: 30px;
+        margin-right: 130px;
+    }
+    #about{
+        height: 120vh;
+    }
+    /* aducation */
+    .aduTopic {
+        top: 60px;
+    }
+    section#education>div>h2 {
+        font-size: 30px;
+        -webkit-text-stroke: 1px #D6D6D6;
+    }
+    #education {
+        height: 75vh;
+
+    }
+
+    .edImg {
+        display: none;
+        width: 28vw;
+    }
+    .school{
+        width: 80vw;
+        right: 0;
+        /* position: absolute; */
+        margin: auto;
+        left: 0;
+        top: 27vh;
+
+    }
+    .edArti{
+        font-size: 12px;
+    }
+    .edArti h4{
+        font-size: 18px;
+    }
+    #schArti{
+        top: -15px;
+        left: 4vw;
+    }
+    .ijse{
+        width: 80vw;
+        display: flex;
+        right: 0;
+        margin: auto;
+        left: 0;
+        top: 60vh;
+        flex-direction: row-reverse;
+    }
+    #ijseArti{
+        width: 67vw;
+        right: 0px;
+        top: -62px;
+    }
+    /*cetificate*/
+    .proTopic h2 {
+        font-size: 30px;
+    }
+    .proTopic {
+        top: 60px;
+        height: 60px;
+    }
+    #certi{
+        top: 20px;
+    }
+    .grid {
+        height: 140px;
+        width: 300px;
+        top: 85px;
+    }
+    #certiBg{
+        height: 275px;
+    }
+    /*languages*/
+    .Languages ul li img {
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        box-shadow: 1px 2px 4px 0px #14192B;
+    }
+    .Languages ul li figure figcaption {
+        display: none;
+    }
+
+    .Languages ul {
+        top: 140px;
+        margin: auto;
+        height: 85px;
+        border-radius: 5px;
+        justify-content: space-evenly;
+    }
+    #lanau{
+        height: 275px;
+    }
+    /*tool*/
+    .aduTopic h2 {
+        font-size: 30px;
+        -webkit-text-stroke: 1px #D6D6D6;
+    }
+    .tools div ul li img {
+        width: 30px;
+        height: 30px;
+    }
+    .tools ul li figure figcaption {
+        display: none;
+    }
+    .toolbac {
+        top: 60px;
+        width: 75vw;
+        height: 170px;
+        border-radius: 5px;
+        justify-content: space-evenly;
+    }
+    .tools {
+        height: 310px;
+    }
+
+    /*project*/
+    #project{
+        height: 740px;
+    }
+    #assignment{
+        height: 740px;
+    }
+    .moreButton {
+
+        bottom: 50px;
+        right: 0;
+        margin: auto;
+        left: 0;
+    }
+    .moreButton a {
+        padding: 5px 8px;
+        border-radius: 15px;
+        font-size: 12px;
+    }
+    #ass a {
+        padding: 5px 8px;
+        border-radius: 15px;
+        font-size: 12px;
+
+    }
+    .proflex {
+        top: 125px;
+        height: 520px;
+        width: 80vw;
+        flex-direction: column;
+    }
+    .proflex figure figcaption {
+        width: 180px;
+        top: 0;
+        bottom: 0;
+    }
+    .proflex figure div {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 235px;
+        height: 145px;
+        border-radius: 7px;
+    }
+    .proflex figure {
+        width: 240px;
+        height: 150px;
+        border-radius: 7px;
+    }
+    /*gallery*/
+    #gtopic {
+        top: 60px;
+    }
+    #gallery{
+        height: 182vh;
+    }
+    .gallery {
+        width: 65vw;
+        height: 860px;
+        top: 120px;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+    }
+
+    /*    contact */
+    main>section#contact>section#contactlogo>div>img {
+        margin-top: 2px;
+        height: 24px;
+    }
+
+    form#form {
+        font-size: 12px;
+        width: 80vw;
+        margin: 0 auto;
+        color: #fff;
+        padding: 0;
+        position: relative;
+    }
+    #chatbox {
+        margin: auto;
+        width: 80vw;
+        top: 15vh;
+        right: 0;
+        left: 0;
+        position: absolute;
+    }
+    input#name{
+        width: 40%;
+        position: absolute;
+    }
+    input#email{
+        width: 50%;
+        left: 50%;
+        position: relative;
+    }
+    input,
+    textarea {
+        display: flex;
+        width: 100%;
+        padding: 6px;
+        border: none;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        background-color: white;
+        color: #44444C;
+    }
+    fieldset {
+        width: 80vw;
+    }
+    #contactlogo {
+        top: 70vh;
+        left: 0px;
+        width: 65vw;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        right: 0;
+    }
+    #contactlogo  div p{
+        font-size: 10px;
+        left: 11vw;
+        position: absolute;
+    }
+
+    #chattitele {
+        text-align: center;
+        font-size: 23px;
+        padding-bottom: 25px;
+    }
+    button {
+        padding: 6px 20px;
+    }
+    #contact{
+        height: 125vh;
+    }
+    main>section#contact>section#contactlogo>div>p {
+        font-size: 12px;
+    }
+
+}
+@media all and (min-width: 425px)and (max-width: 767px) {
+
+    .logo {
+        padding: 0px;
+        color: #f1f1f1;
+        font-size: 21px;
+        font-weight: bold;
+    }
+    #ham{
+
+        display: block;
+        font-size: 22px;
+        position: absolute;
+        left: 343px;
+    }
+
+    #cros{
+        display: block;
+        font-size: 30px;
+        right: 25px;
+        position: absolute;
+        top: 25px;
+    }
+    header menu {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        width: 100vw;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navbar{
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        left: -100vw;
+        top: 0;
+        background-color: #2e2b34;
+        padding: 0;
+    }
+    header {
+        padding: 30px;
+        position: fixed;
+        width: 100%;
+        height: 10vh;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #1E1E1E;
+        color: #14192B;
+    }
+    header menu li {
+        font-size: 20px;
+        margin: 0;
+    }
+    header div:nth-child(1){
+        position: absolute;
+        width: 30px;
+        color: white;
+        z-index: 999;
+    }
+    #imag1 {
+        height: 52vh;
+    }
+    .text-1 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    .text-2 {
+        font-size: 40px;
+        padding-bottom: 0px;
+    }
+    .text-3 {
+        font-size: 22px;
+        padding-bottom: 0px;
+    }
+    .homeTxt a {
+        padding: 5px 15px 5px 15px;
+        font-size: 16px;
+    }
+
+
+    .homeTxt {
+        left: 13vw;
+        top: 20vh;
+    }
+    .hoI{
+        padding-bottom: 25px;
+    }
+    .hoIcon{
+        left: 60px;
+        font-size: 25px;
+        color: white;
+        position: absolute;
+        top: 350px;
+    }
+
+    /*about*/
     #topic h2 {
         font-size: 35px;
     }
@@ -211,7 +950,7 @@
     }
 /* aducation */
     .edImg {
-        width: 28vw;
+        width: 26vw;
     }
     .school{
         width: 80vw;
@@ -220,7 +959,6 @@
         margin: auto;
         left: 0;
         top: 27vh;
-
     }
     .edArti{
         font-size: 12px;
@@ -246,7 +984,138 @@
         right: 125px;
         top: -9px;
     }
-/*    contact */
+/*    certificate*/
+
+    .proTopic h2 {
+        font-size: 35px;
+    }
+    .proTopic {
+        top: 60px;
+        height: 60px;
+    }
+    #certi{
+        top: 20px;
+    }
+    .grid {
+        height: 150px;
+        width: 325px;
+        top: 85px;
+    }
+    #certiBg{
+        height: 275px;
+    }
+    /*languages*/
+    .Languages ul li img {
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        box-shadow: 1px 2px 4px 0px #14192B;
+    }
+    .Languages ul li figure figcaption {
+        display: none;
+    }
+
+    .Languages ul {
+        top: 140px;
+        margin: auto;
+        height: 85px;
+        border-radius: 5px;
+        justify-content: space-evenly;
+    }
+    #lanau{
+        height: 285px;
+    }
+    /*tool*/
+    .aduTopic h2 {
+        font-size: 35px;
+        -webkit-text-stroke: 1px #D6D6D6;
+    }
+    .tools div ul li img {
+        width: 30px;
+        height: 30px;
+    }
+    .tools ul li figure figcaption {
+        display: none;
+    }
+    .toolbac {
+        top: 60px;
+        width: 75vw;
+        height: 170px;
+        border-radius: 5px;
+        justify-content: space-evenly;
+    }
+    .tools {
+        height: 310px;
+    }
+
+    /*project*/
+    #project{
+        height: 740px;
+    }
+    #assignment{
+        height: 740px;
+    }
+    .moreButton {
+
+        bottom: 50px;
+        right: 0;
+        margin: auto;
+        left: 0;
+    }
+    .moreButton a {
+        padding: 5px 8px;
+        border-radius: 15px;
+        font-size: 12px;
+    }
+    #ass a {
+        padding: 5px 8px;
+        border-radius: 15px;
+        font-size: 12px;
+
+    }
+    .proflex {
+        top: 125px;
+        height: 520px;
+        width: 80vw;
+        flex-direction: column;
+    }
+    .proflex figure figcaption {
+        width: 180px;
+        top: 0;
+        bottom: 0;
+    }
+    .proflex figure div {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 235px;
+        height: 145px;
+        border-radius: 7px;
+    }
+    .proflex figure {
+        width: 240px;
+        height: 150px;
+        border-radius: 7px;
+    }
+    /*gallery*/
+    #gtopic {
+        top: 60px;
+    }
+    #gallery{
+        height: 100vh;
+    }
+    .gallery {
+        width: 75vw;
+        height: 340px;
+        top: 150px;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+
+    /*    contact */
     main>section#contact>section#contactlogo>div>img {
         height: 25px;
     }
