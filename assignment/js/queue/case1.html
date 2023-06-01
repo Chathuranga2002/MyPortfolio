@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+
+    <title>js</title>
+
+    <style>
+        h1{
+            text-align: center;
+            font-size: 30px;
+            color: white;
+        }
+        body{
+            background-color: #2b2f32;
+        }
+        section{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 1000px;
+            height: 200px;
+            display: grid;
+            grid-gap: 5px;
+            /*border-bottom: 2px solid black;*/
+            grid-template-rows: repeat(5, 1fr);
+            grid-template-columns: repeat(8, 1fr);
+        }
+
+        section div{
+            height: calc(200px/3);
+            border-radius: 10px;
+        }
+
+        section> div:nth-child(1) {
+            grid-row: 1;
+            background-color: red;
+
+        }
+        section > div:nth-child(2) {
+            grid-row: 3;
+            grid-column: 3;
+            background-color: green;
+
+        }
+        section > div:nth-child(3) {
+            grid-row: 3;
+            grid-column: 4;
+            background-color: blue;
+
+        }
+        section > div:nth-child(4) {
+            grid-row: 3;
+            grid-column: 5;
+            background-color: yellow;
+
+        }
+        section > div:nth-child(5) {
+            grid-row: 3;
+            grid-column: 6;
+            background-color: plum;
+
+        }
+
+       section > div:nth-child(6) {
+            grid-row: 5;
+            grid-column: 8;
+            background-color: deeppink;
+
+        }
+        section > div:nth-child(7) {
+            height: 2px;
+            grid-row: 2;
+            grid-column:1/9;
+            background-color:white;
+
+        }
+        section > div:nth-child(8) {
+            height: 2px;
+            grid-row: 4;
+            grid-column: 1/9;
+            background-color:white;
+
+        }
+
+
+    </style>
+
+</head>
+<body>
+<h1> Java Script Queue</h1>
+<section>
+    <div id="c1"></div>
+
+    <div id="c2"></div>
+    <div id="c3"></div>
+    <div id="c4"></div>
+    <div id="c5"></div>
+
+    <div id="c6"></div>
+    <div ></div>
+    <div ></div>
+</section>
+<script>
+    let color=["red","green","blue","yellow","plum","deeppink"];
+
+    let divArray= document.querySelector("section").children;
+
+
+    setInterval(function(){
+
+        for (let i=0;i< divArray.length;i++){
+            divArray[i].style.background=color[i];
+        }
+        let lastElement = color.pop();
+        color.unshift(lastElement);
+
+    },500);
+
+
+
+</script>
+</body>
+</html>
