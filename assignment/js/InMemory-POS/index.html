@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../css-Framework/css/bootstrap.css">
+    <script src="../../css-Framework/js/bootstrap.bundle.js"></script>
+
+
+
+</head>
+<body class=" bg-secondary">
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-info-subtle">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Pos System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#customer" id="customerForm">Customer</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#item" id="itemForm">Item</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#placeOrder" id="PlceorderForm"> Place Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#order" id="ordersForm">Orders</a>
+                    </li>
+
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container text-center" id="customer">
+    <div class="row">
+        <div class="col">
+            <h2 class="text-light pt-5 m-lg-2">Manage Customers</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xxl-5 bg-light rounded-start " >
+
+            <section class="col border-light-subtle m-3 border rounded object-fit-contain" >
+                <h5 class="text-dark text-center m-lg-3 pt-5" >Add Customer</h5>
+                <form>
+                    <div class="col-auto m-3">
+                        <input type="text" class="form-control" id="cid1" placeholder="Id">
+                        <label for="cid"></label>
+                    </div>
+
+                    <div class="form-floating m-3">
+                        <input type="text" class="form-control" id="Name1" placeholder="Name">
+                        <label for="Name">Name</label>
+                    </div>
+
+                    <div class="form-floating m-3">
+                        <input type="email" class="form-control" id="Address1" placeholder="Address">
+                        <label for="Address">Address</label>
+                    </div>
+
+                    <div class="form-floating m-3">
+                        <input type="email" class="form-control" id="contact1" placeholder="Contact">
+                        <label for="contact">Contact</label>
+                    </div>
+                </form>
+
+                <div class="col-6 ms-5">
+                    <button id="addCustomer" type="button" class="btn  btn-info me-1 mt-2 mb-3">Add</button>
+                    <button type="button" class="btn btn-warning me-1 mt-2 mb-3 ms-4">Update</button>
+                </div>
+
+            </section>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 col-xxl-7 bg-light  rounded-end">
+            <section class="col border-light-subtle m-3 border rounded object-fit-contain"  >
+                <h5 class="text-dark text-center m-lg-3 pb-3" >Customer Details</h5>
+                <div class="row m-2"  style="overflow :scroll">
+                    <table id="cusTable" class="table table-light table-striped  " >
+                        <thead>
+                        <tr>
+                            <th style="background-color: #618bb1" scope="col">Id</th>
+                            <th style="background-color: #618bb1" scope="col">Name</th>
+                            <th style="background-color: #618bb1" scope="col">Address</th>
+                            <th style="background-color: #618bb1" scope="col">Contact</th>
+                            <th style="background-color: #618bb1" scope="col">Action</th>
+                        </tr>
+                        </thead>
+                        <tbody id="cusTblBody">
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<div class="container text-center" id="item">
+    <div class="row">
+        <div class="col">
+            <h2 class="text-light pt-5 m-lg-2">Manage Items</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5 bg-light rounded-start" >
+
+            <section class="col border-light-subtle m-3 border rounded object-fit-contain" >
+                <h5 class="text-dark text-center m-lg-3 pt-5" >Add Item</h5>
+                <form>
+                    <div class="col-auto m-3" >
+                        <input type="text" class="form-control" id="cid" placeholder="Item Code">
+                        <label for="cid"></label>
+                    </div>
+
+                    <div class="form-floating m-3">
+                        <input type="text" class="form-control" id="Name" placeholder="Description">
+                        <label for="Name">Name</label>
+                    </div>
+
+                    <div class="form-floating m-3">
+                        <input type="email" class="form-control" id="Address" placeholder="Unite Price">
+                        <label for="Address">Address</label>
+                    </div>
+
+                    <div class="form-floating m-3">
+                        <input type="email" class="form-control" id="contact" placeholder="QTY">
+                        <label for="contact">Contact</label>
+                    </div>
+                </form>
+
+                <div class="col-6 ms-5">
+                    <button type="button" class="btn  btn-info me-1 mt-2 mb-3">Add</button>
+                    <button type="button" class="btn btn-warning me-1 mt-2 mb-3 ms-4">Update</button>
+                </div>
+
+            </section>
+        </div>
+        <div class="col-7 bg-light  rounded-end">
+            <section class="col border-light-subtle m-3 border rounded object-fit-contain" >
+                <h5 class="text-dark text-center m-lg-3 pb-3" >Item Details</h5>
+                <table class="table table-light table-striped">
+                    <thead>
+                    <tr>
+                        <th style="background-color: #618bb1" scope="col">Id</th>
+                        <th style="background-color: #618bb1" scope="col">Name</th>
+                        <th style="background-color: #618bb1" scope="col">Address</th>
+                        <th style="background-color: #618bb1" scope="col">Contact</th>
+                        <th style="background-color: #618bb1" scope="col">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    <tr>
+                        <th scope="row">I01</th>
+                        <td>Yoget</td>
+                        <td>70</td>
+                        <td>20</td>
+                        <td>
+                            <button type="button" class="btn btn-warning">Edit</button>
+                            <button type="button" class="btn btn-danger">Delete</button>
+                        </td>
+                    </tr>
+                    <th scope="row">I01</th>
+                    <td>Yoget</td>
+                    <td>70</td>
+                    <td>20</td>
+                    <td>
+                        <button type="button" class="btn btn-warning">Edit</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </td>
+                    </tr>
+                    <th scope="row">I01</th>
+                    <td>Yoget</td>
+                    <td>70</td>
+                    <td>20</td>
+                    <td>
+                        <button type="button" class="btn btn-warning">Edit</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+</div>
+<div class="container text-center" id="order">
+    <div class="row">
+        <div class="col">
+            <h2 class="text-light pt-5 m-lg-2">Manage Orders</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12  bg-light rounded" >
+            <table class="table table-light table-striped">
+                <thead>
+                <tr>
+                    <th style="background-color: #618bb1" scope="col">Order ID</th>
+                    <th style="background-color: #618bb1" scope="col">Date</th>
+                    <th style="background-color: #618bb1" scope="col">Customer ID</th>
+                    <th style="background-color: #618bb1" scope="col">Item ID</th>
+                    <th style="background-color: #618bb1" scope="col">Quantity</th>
+                    <th style="background-color: #618bb1" scope="col">Discount</th>
+                    <th style="background-color: #618bb1" scope="col">Total</th>
+                    <th style="background-color: #618bb1" scope="col">Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="col">O01</th>
+                    <th scope="col">2023-05-18</th>
+                    <th scope="col">C1</th>
+                    <th scope="col">I01</th>
+                    <th scope="col">2</th>
+                    <th scope="col">10.00</th>
+                    <th scope="col">120.00</th>
+                    <th scope="col">
+                        <button type="button" class="btn btn-warning">Edit</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </th>
+                </tr>
+                <tr>
+                    <th scope="col">O02</th>
+                    <th scope="col">2023-05-18</th>
+                    <th scope="col">C1</th>
+                    <th scope="col">I01</th>
+                    <th scope="col">2</th>
+                    <th scope="col">10.00</th>
+                    <th scope="col">120.00</th>
+                    <th scope="col">
+                        <button type="button" class="btn btn-warning">Edit</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </th>
+                </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+</div>
+<section id="placeOrder">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <h2 class="text-light pt-5 m-lg-2">Place Orders</h2>
+            </div>
+        </div>
+
+        <section class="row bg-light rounded-top p-3">
+            <form action="">
+                <div class="row border border-light-subtle rounded p-2">
+
+                    <div class="col">
+                        <div class="input-group">
+                            <span class="input-group-text">Order ID</span>
+                            <input class="form-control" type="text" placeholder="O-001" aria-label="Disabled input example" disabled>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group">
+                            <span class="input-group-text">Date</span>
+                            <input class="form-control" type="text" placeholder="2023-05-17" aria-label="Disabled input example" disabled>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group">
+                            <span class="input-group-text">CustomerID</span>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Select ID</option>
+                                <option value="1">C001</option>
+                                <option value="2">C002</option>
+                                <option value="3">C003</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group">
+                            <span class="input-group-text">Customer Name</span>
+                            <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row mt-5 mb-2 p-3 border border-light-subtle rounded">
+
+                    <div class="col">
+                        <div class="input-group">
+                            <span class="input-group-text">Item ID</span>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Select ID</option>
+                                <option value="1">I001</option>
+                                <option value="2">I002</option>
+                                <option value="3">I003</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="input-group">
+                            <span class="input-group-text">Description</span>
+                            <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="input-group">
+                            <span class="input-group-text">Qty On Hand</span>
+                            <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="input-group">
+                            <span class="input-group-text">Unit Price</span>
+                            <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="input-group">
+                            <span class="input-group-text">Quantity</span>
+                            <input class="form-control" type="text" placeholder="" aria-label="Disabled input example">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-10"></div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-outline-info">Add to Cart</button>
+                        <button type="button" class="btn btn-outline-warning">Clear</button>
+                    </div>
+                </div>
+
+            </form>
+        </section>
+
+        <section class="row bg-light rounded-bottom p-3">
+            <div class="row">
+                <table class="table table-light table-striped">
+                    <thead>
+                    <tr>
+                        <th style="background-color: #618bb1" scope="col">Item ID</th>
+                        <th style="background-color: #618bb1" scope="col">Description</th>
+                        <th style="background-color: #618bb1" scope="col">Qty</th>
+                        <th style="background-color: #618bb1" scope="col">Unit Price</th>
+                        <th style="background-color: #618bb1" scope="col">Total</th>
+                        <th style="background-color: #618bb1" scope="col">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    <tr>
+                        <th scope="col">I01</th>
+                        <th scope="col">coclete</th>
+                        <th scope="col">2</th>
+                        <th scope="col">200.00</th>
+                        <th scope="col">400.00</th>
+                        <th scope="col">
+                            <button type="button" class="btn btn-warning">Edit</button>
+                            <button type="button" class="btn btn-danger">Delete</button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="col">I02</th>
+                        <th scope="col">yogete</th>
+                        <th scope="col">10</th>
+                        <th scope="col">70.00</th>
+                        <th scope="col">700.00</th>
+                        <th scope="col">
+                            <button type="button" class="btn btn-warning">Edit</button>
+                            <button type="button" class="btn btn-danger">Delete</button>
+                        </th>
+                    </tr>
+
+
+
+                    </tbody>
+                </table>
+            </div>
+            <form action="">
+                <div class="row mt-3">
+
+                    <div class="col">
+                        <div class="input-group">
+                            <span class="input-group-text">Total-Rs:</span>
+                            <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="input-group">
+                            <span class="input-group-text">Discount-Rs:</span>
+                            <input class="form-control" type="number" placeholder="" aria-label="Disabled input example">
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="input-group">
+                            <span class="input-group-text">Sub Tot-Rs:</span>
+                            <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="row mt-3">
+                <div class="col-10"></div>
+                <div class="col-2">
+                    <button type="button" class="btn btn-outline-info">Purchase</button>
+                    <button type="button" class="btn btn-outline-danger">Cancel</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="container">
+        <div class="row">
+            <div class="col">
+                <h2 class="text-light pt-5 m-lg-2"></h2>
+            </div>
+        </div>
+    </section>
+</section>
+<script src="jquery-3.7.0.min.js"></script>
+<script>
+    // document.addEventListener("DOMContentLoaded",function (){
+    //     document.getElementById("customer").style.display="inline-block";
+    //     document.getElementById("item").style.display="none";
+    //     document.getElementById("order").style.display="none";
+    //     document.getElementById("placeOrder").style.display="none";
+    // })
+
+    $("DOMContentLoaded", function () {
+        $("#customer").css("display", 'inline-block');
+        $("#item").css("display", 'none');
+        $("#order").css("display", 'none');
+        $("#placeOrder").css("display", 'none');
+    });
+
+    $("#customerForm").click( function () {
+        $("#customer").css("display", 'inline-block');
+        $("#item").css("display", 'none');
+        $("#order").css("display", 'none');
+        $("#placeOrder").css("display", 'none');
+    });
+
+    // document.getElementById("customerForm").addEventListener('click',function (){
+    //     document.getElementById("customer").style.display="inline-block";
+    //     document.getElementById("item").style.display="none";
+    //     document.getElementById("order").style.display="none";
+    //     document.getElementById("placeOrder").style.display="none";
+    // });
+    // document.getElementById("itemForm").addEventListener('click',function (){
+    //     document.getElementById("item").style.display="inline-block";
+    //     document.getElementById("customer").style.display="none";
+    //     document.getElementById("order").style.display="none";
+    //     document.getElementById("placeOrder").style.display="none";
+    // });
+    $("#itemForm").click( function () {
+        $("#customer").css("display", 'none');
+        $("#item").css("display", 'inline-block');
+        $("#order").css("display", 'none');
+        $("#placeOrder").css("display", 'none');
+    });
+    // document.getElementById("ordersForm").addEventListener('click',function (){
+    //     document.getElementById("order").style.display="inline-block";
+    //     document.getElementById("customer").style.display="none";
+    //     document.getElementById("item").style.display="none";
+    //     document.getElementById("placeOrder").style.display="none";
+    // });
+    $("#ordersForm").click( function () {
+        $("#customer").css("display",  'none');
+        $("#item").css("display", 'none');
+        $("#order").css("display", 'inline-block');
+        $("#placeOrder").css("display", 'none');
+    });
+    // document.getElementById("PlceorderForm").addEventListener('click',function (){
+    //     document.getElementById("placeOrder").style.display="inline-block";
+    //     document.getElementById("customer").style.display="none";
+    //     document.getElementById("order").style.display="none";
+    //     document.getElementById("item").style.display="none";
+    // });
+    $("#PlceorderForm").click( function () {
+        $("#customer").css("display", 'none');
+        $("#item").css("display", 'none');
+        $("#order").css("display", 'none');
+        $("#placeOrder").css("display", 'inline-block');
+    });
+
+
+
+
+
+
+
+</script>
+
+<script>
+
+
+
+
+    $("#addCustomer").click(function(){
+        let CusId= $("#cid1").val();
+        let CusName=$("#Name1").val();
+        let address=$("#Address1").val();
+        let contact=$("#contact1").val();
+
+        console.log(CusId,CusName,address,contact);
+
+        let table = $("#cusTblBody");
+
+        let tr = $('<tr>');
+        let td1 = $('<td>');
+        let td2 = $('<td>');
+        let td3 = $('<td>');
+        let td4 = $('<td>');
+        let td5 = $('<td>');
+        let btn1 = $('<button>');
+        let btn2 = $('<button>');
+
+
+        td1.text(CusId);
+        td2.text(CusName);
+        td3.text(address);
+        td4.text(contact);
+        btn1.text("Edit");
+        btn1.css("background-color","yellow");
+        btn2.text("Delete");
+        btn2.css("background-color","red");
+
+        td5.append(btn1);
+        td5.append(btn2);
+
+        tr.append(td1);
+        tr.append(td2);
+        tr.append(td3);
+        tr.append(td4);
+        tr.append(td5);
+
+        table.append(tr);
+    });
+
+</script>
+<script src="script.js"></script>
+
+</body>
+</html>
