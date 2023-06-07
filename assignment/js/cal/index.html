@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> cal </title>
+    <meta name="theme-color" content="#353b48">
+    <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
+
+    <style>
+        section{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            border: black 2px solid;
+            margin: auto;
+            width: 600px;
+            height: 450px;
+            display: grid;
+            grid-gap: 10px;
+            /*border-bottom: 2px solid black;*/
+            grid-template-rows: repeat(5, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+        }
+        section> div {
+            background-color: blueviolet;
+
+        }
+        section> div:nth-child(1) {
+            margin-top: 20px;
+            grid-row: 1;
+            height: 60px;
+            background-color: red;
+            margin-left: 10px;
+
+        }
+        section > div:nth-child(2) {
+            grid-row: 1;
+            grid-column: 2/5;
+            height: 60px;
+            margin-right: 10px;
+            margin-top: 20px;
+            background-color: green;
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <section>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+
+    </section>
+
+
+</body>
+</html>

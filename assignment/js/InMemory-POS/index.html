@@ -514,6 +514,7 @@
 <script>
 
 
+    let customerArray = [];
 
 
     $("#addCustomer").click(function(){
@@ -522,7 +523,16 @@
         let address=$("#Address1").val();
         let contact=$("#contact1").val();
 
-        console.log(CusId,CusName,address,contact);
+        var user={
+           id:CusId,
+           name:CusName,
+           cusAddress:address,
+           CusContact:contact,
+        }
+
+        customerArray.push(user);
+
+        console.log(customerArray);
 
         let table = $("#cusTblBody");
 
@@ -536,10 +546,13 @@
         let btn2 = $('<button>');
 
 
-        td1.text(CusId);
-        td2.text(CusName);
-        td3.text(address);
-        td4.text(contact);
+
+           td1.text(user.id);
+           td2.text(user.name);
+           td3.text(user.cusAddress);
+           td4.text(user.CusContact);
+
+
         btn1.text("Edit");
         btn1.css("background-color","yellow");
         btn2.text("Delete");

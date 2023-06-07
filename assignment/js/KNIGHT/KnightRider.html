@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Manipulation With JS - 3</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: black;
+        }
+        section {
+            display: flex;
+            width: 1000px;
+            height: 90px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            position: absolute;
+
+        }
+
+        section>div {
+            height: 100%;
+            width: 200px;
+            margin: 3px;
+
+        }
+        .btn-set{
+            top: 465px;
+            margin: auto;
+            left: 0;
+            right: 0;
+            position: absolute;
+            width: 600px;
+            display: flex;
+            /* height: 189px; */
+            /* align-items: flex-start; */
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+
+
+        #start-btn {
+            background-color: #077da1;
+            border-radius: 13px;
+        }
+        #speed-btn{
+            background-color: plum;
+            color: white;
+            border-radius: 10px;
+        }
+
+        #start-btn, #stop-btn, #speed-btn {
+         width: 100px;
+         height: 30px;
+        }
+
+        @keyframes btns {
+            0% {
+                left: 0;
+                width: 0;
+                height: 0;
+            }
+
+            100% {
+                opacity: 1;
+                width: 75px;
+                height: 35px;
+                color: white;
+            }
+        }
+
+        #start-btn {
+            background-color: #015184;
+            border-radius: 10px;
+            color: white;
+        }
+
+        #stop-btn {
+            background-color: #aa0018;
+            border-radius: 10px;
+            color: white;
+        }
+
+
+        h2 {
+            text-align: center;
+            position: relative;
+            top: 210px;
+            color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+<h2>JavaScript Knight Rider</h2>
+<div></div>
+<section>
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+</section>
+
+<div  class="btn-set">
+<button id="start-btn">Start</button>
+<button id="speed-btn">Speed</button>
+<button id="stop-btn">Stop</button>
+</div>
+
+<script src="Js/jquery-3.7.0.min.js"></script>
+<script>
+
+    let colors = ["#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000",  '#400000', "#800000", "#bf0000", "#ff0000"];
+    let colors2 = ["#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000",  '#ff0000', "#bf0000", "#800000", "#400000"];
+
+    let section = document.querySelector("section");
+    let divArray = section.getElementsByTagName("div");
+    let mySound = new Audio("assignment/js/KNIGHT/audio/kitt scanner.mp3");
+    let mySound2 = new Audio("assignment/js/KNIGHT/audio/Knight-Rider-Theme-Song.mp3");
+
+    let count = 0;
+    let reverse = true;
+    let interval;
+
+    alert("Click Start button for Have More  FUN!");
+
+    function Kitt() {
+
+        interval = setInterval(function () {
+
+            if (reverse) {
+                for (let i = 0; i < divArray.length; i++) {
+                    divArray[i].style.backgroundColor = colors[i];
+                }
+
+                let lastValue = colors.pop();
+                colors.unshift(lastValue);
+                count++;
+
+                if (count === 12) {
+                    reverse = false;
+                }
+
+            } if (reverse === false) {
+
+                let lastColor = colors2.shift();
+                colors2.push(lastColor);
+
+                for (let i = 0; i < divArray.length; i++) {
+                    divArray[i].style.backgroundColor = colors2[i];
+                }
+                count--;
+
+                if (count === 1) {
+                    reverse = true;
+                }
+            }
+
+        }, 50);
+
+    }
+
+    //Initialize
+    $(document).ready(function () {
+        clearInterval(interval);
+        Kitt();
+
+    });
+
+    //Start
+    document.querySelector("#start-btn").addEventListener('click', function () {
+        clearInterval(interval);
+        Kitt();
+        mySound.play();
+        setInterval( function (){
+            mySound2.play();
+        },8000);
+
+    });
+
+    //Stop
+    document.querySelector("#stop-btn").addEventListener('click', function () {
+        clearInterval(interval);
+        mySound.pause();
+    });
+
+    //get Speed
+    document.querySelector("#speed-btn").addEventListener('click', function () {
+        Kitt();
+    });
+
+
+
+
+</script>
+</body>
+
+</html>
