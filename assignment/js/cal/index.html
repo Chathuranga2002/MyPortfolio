@@ -2,81 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> cal </title>
-    <meta name="theme-color" content="#353b48">
-    <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
-
-    <style>
-        section{
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            border: black 2px solid;
-            margin: auto;
-            width: 600px;
-            height: 450px;
-            display: grid;
-            grid-gap: 10px;
-            /*border-bottom: 2px solid black;*/
-            grid-template-rows: repeat(5, 1fr);
-            grid-template-columns: repeat(4, 1fr);
-        }
-        section> div {
-            background-color: blueviolet;
-
-        }
-        section> div:nth-child(1) {
-            margin-top: 20px;
-            grid-row: 1;
-            height: 60px;
-            background-color: red;
-            margin-left: 10px;
-
-        }
-        section > div:nth-child(2) {
-            grid-row: 1;
-            grid-column: 2/5;
-            height: 60px;
-            margin-right: 10px;
-            margin-top: 20px;
-            background-color: green;
-
-        }
-
-    </style>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 <body>
-
-    <section>
-        <div></div>
-        <div></div>
-
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-
-
-    </section>
-
-
+<section>
+<div class="calculator-grid">
+    <div class="output">
+        <div data-previous-operand class="previous-operand"></div>
+        <div data-current-operand class="current-operand"></div>
+    </div>
+    <button data-all-clear class="span-two">AC</button>
+    <button data-delete>DEL</button>
+    <button data-operation>÷</button>
+    <button data-number>1</button>
+    <button data-number>2</button>
+    <button data-number>3</button>
+    <button data-operation>*</button>
+    <button data-number>4</button>
+    <button data-number>5</button>
+    <button data-number>6</button>
+    <button data-operation>+</button>
+    <button data-number>7</button>
+    <button data-number>8</button>
+    <button data-number>9</button>
+    <button data-operation>-</button>
+    <button data-number>.</button>
+    <button data-number>0</button>
+    <button data-equals class="span-two">=</button>
+</div>
+</section>
 </body>
 </html>
