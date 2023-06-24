@@ -2,7 +2,7 @@ order={
     oId : "",
     cusId : "",
     date : "",
-    orderDetails : undefined,
+    orderDetails :[],
     total : 0,
     subTotal : 0,
     discount : 0
