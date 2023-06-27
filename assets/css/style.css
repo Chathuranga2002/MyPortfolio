@@ -586,6 +586,21 @@ section#education>div>h2{
     color: white;
     border: 1px solid white;
 }
+#as1{
+    background-image: url("../asigmentImg/tr-case2.gif");
+    background-size:  cover;
+    background-position: bottom;
+}
+#as2{
+    background-image: url("../asigmentImg/tr-case1.gif");
+    background-size:  cover;
+    background-position: bottom;
+}
+#as3{
+    background-image: url("../asigmentImg/tr-5.gif");
+    background-size:  cover;
+    background-position: bottom;
+}
 
 /* contact
 ============================================ */
@@ -926,8 +941,26 @@ form#form {
     background-image: url("../asigmentImg/pos.png");
 
 }
+.MoreAssig a:nth-child(14) div div{
+    background-image: url("../asigmentImg/img.png");
 
+}
+.MoreAssig a:nth-child(15) div div{
+    background-image: url("../asigmentImg/img_1.png");
 
+}
+.MoreAssig a:nth-child(16) div div{
+    background-image: url("../asigmentImg/img_2.png");
+
+}
+.MoreAssig a:nth-child(17) div div{
+    background-image: url("../asigmentImg/img_3.png");
+
+}
+.MoreAssig a:nth-child(18) div div{
+    background-image: url("../asigmentImg/img_4.png");
+
+}
 /* foter
 ============================================ */
 footer{
