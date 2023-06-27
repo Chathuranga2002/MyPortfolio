@@ -974,3 +974,13 @@ footer{
 footer p{
     margin: auto;
 }
+.proflex figure:hover {
+   transform: translateY(-3%);
+    box-shadow: 1px 2px 10px 0px #14192B;
+}
+.Languages ul li:hover{
+    transform: translateY(-3%);
+}
+.toolbac li:hover {
+    transform: translateY(-3%);
+}
